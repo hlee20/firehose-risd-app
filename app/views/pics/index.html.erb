@@ -1,13 +1,18 @@
-<div class="steamy-hottub">
-	<h2>
 
 		<% @pics.each do |pic| %>
+<div class="span4 text-center steamy-hottub">
+			
+			<h1 class="custom-font">
 			Hour: <%= pic.hour %>
+			</h1>
+			<h2>
+
 			<br />
 			Emotion: <%= pic.emotion %>
 			<br />
+			<br />
 			Learned: <%= pic.learned %>
-		<% end %>
-
-	</h2>
-</div>
+		</h2>
+		
+	</div>
+<% end %>
